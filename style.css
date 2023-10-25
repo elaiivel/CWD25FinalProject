@@ -1,0 +1,321 @@
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    transition: .2s linear;
+}
+
+.container.gallery{
+    width: 1400px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.row.gallery{
+    background-image: url(images/gallerybg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+
+.container.gallery>.box{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.container.gallery>.box>img{
+    max-width: 100%;
+    border-radius:15px;
+}
+
+h1{
+    margin-top: 4%;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    font-family: 'Magnolia Script', serif;
+    font-style: italic;
+    color: rgb(68, 32, 3)
+}
+
+h2{
+    margin-bottom: 5%;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    font-family: 'Magnolia Script', serif;
+    font-style: italic;
+}
+
+
+h3, h4{
+    font-weight: bold;
+    font-family:'Magnolia Script', sans-serif;
+    font-style: italic;
+    color: rgb(97, 50, 13);
+    letter-spacing: 0.06em;
+    
+}
+
+h5{
+    font-weight: normal;
+    font-family:'Josefin Sans', sans-serif;
+    letter-spacing: .5em;
+    font-weight: 600;
+    color: rgb(60, 30, 6)
+}
+
+h6{
+    font-weight: normal;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(60, 30, 6)
+}
+
+p.tagline{
+    font-weight: normal;
+    font-family:'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(60, 30, 6)
+}
+
+p{
+    font-weight: normal;
+    font-family: 'Josefin Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(60, 30, 6);
+    letter-spacing: .06em;
+}
+
+span.card-title{
+    font-weight: normal;
+    font-family: 'Josefin Sans', 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    color: rgb(60, 30, 6);
+    font-size: .02em;
+
+}
+
+
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #570055;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer
+}
+
+
+nav{
+    background-color: rgb(86, 2, 97);
+    background-image: url(images/navbar_bg.png);
+    
+}
+
+.brand-logo {
+    display: inline-block;
+    height: 100%;
+}
+
+.brand-logo>img {
+    position: relative;
+    height: 70px;
+}
+
+ul.sidenav.sidenav-fixed li.logo {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 100px
+}
+
+.sidenav{
+    background-color:rgb(238, 206, 253)
+}
+
+.sidenav>li {
+    width: 100%
+}
+
+.sidenav .logo-container {
+    padding: 0 16px;
+    height: auto;
+    line-height: 64px;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    box-sizing: content-box
+}
+
+.sidenav .logo-container i.material-icons {
+    line-height: inherit
+}
+
+.sidenav .collapsible {
+    border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+
+.sidenav .collapsible>.active .collapsible-header .chevron {
+    transform: rotate(-90deg)
+}
+
+.sidenav .collapsible>li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: background-color .2s
+}
+
+.sidenav .collapsible>li:hover {
+    background-color: rgba(0,0,0,0.05)
+}
+
+.sidenav .collapsible>li.waves-effect {
+    display: block
+}
+
+.sidenav .collapsible>li:last-child {
+    border-bottom: 0
+}
+
+.sidenav .collapsible .collapsible-header {
+    text-transform: uppercase;
+    height: 64px;
+    line-height: 64px
+}
+
+.sidenav .collapsible .collapsible-header:hover {
+    background-color: transparent
+}
+
+.sidenav .collapsible .collapsible-header .chevron {
+    float: right;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 20px 0 0 0;
+    transition: transform .2s
+}
+
+.sidenav .collapsible .collapsible-body {
+    padding-bottom: 16px;
+    background-color: #610248
+}
+
+.sidenav .collapsible .collapsible-body li>a {
+    padding: 0 16px;
+    transition: background-color .2s ease-out
+}
+
+.sidenav .collapsible .collapsible-body li>a:hover,.sidenav .collapsible .collapsible-body li>a.active {
+    background-color: #f707ef12
+}
+
+.sidenav .collapsible .collapsible-body li>a>i.material-icons {
+    margin-right: 16px
+}
+
+.sidenav li.active>a,.sidenav li:hover>a,.sidenav li>a:hover,.sidenav li>a.active {
+    background-color: transparent
+}
+
+.sidenav li.active>a::before,.sidenav li:hover>a::before,.sidenav li>a:hover::before,.sidenav li>a.active::before {
+    transform: scaleY(1)
+}
+
+.sidenav li>a {
+    position: relative;
+    padding: 0 16px
+}
+
+.sidenav li>a::before {
+    left: auto;
+    right: 0
+}
+
+#logo-container {
+    height: auto;
+    margin-bottom: 0px
+}
+
+.collapsible-body li>a,.dropdown-content li>span {
+    color: white
+}
+
+.dropdown-content li>a,.dropdown-content li>span {
+    font-size: 12px;
+    color: #9b059b;
+    display: block;
+}
+
+.dropdown-content li:hover,.dropdown-content li.active {
+    background-color: #fc9fd8
+}
+
+.dropdown-content.header li:hover,.dropdown-content li.active {
+    background-color: #fc9fd8
+}
+
+.dropdown-content.header li{
+    background-color: #610248;    
+}
+
+.dropdown-content.header li>a,.dropdown-content.header li>span {
+    color: #fcd8fc;
+
+}
+
+.tabs {
+    overflow-x: visible !important;
+    overflow-y: initial !important;    
+}
+
+.tabs-transparent {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.megamenu{
+    color:#570055 !important
+}
+
+.carousel-item>img {
+    width: 100%;
+    height: auto;
+}
+
+label {
+    display: block;
+    font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+}
+
+div.page-title{
+    margin: 10px 50px 20px;
+}
+
+div.row.legacy{
+    background-image: url(images/legacy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col.s6 > .btn {
+    width: 100%;
+}
+
+radio:required {
+    border-color: rgb(47, 7, 227);
+}
+
+
+input[type="radio" i] {
+    background-color: purple;
+}

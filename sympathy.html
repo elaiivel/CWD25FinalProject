@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    <title>MasarejFlowerShop</title>
+</head>
+
+<body>       
+<!--Navbar-Fixed-->
+<div class="navbar-fixed">   
+    <nav class="nav-extended">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"> <img src="images/logo02.png" class="responsive-img logo" alt="">
+                </a>
+                <a href="#"  class="sidenav-trigger" data-target="slide-out">
+                    <i class="fa-solid fa-bars purple-text text-darken-2"></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="index.html">Home</i></a>
+                    </li>
+                    <li>
+                        <a href="About Us.html" target="_blank">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="tooltipped" data-position="bottom" data-tooltip="Shopping Cart"><i class="fa-brands fa-opencart"></i></a>
+                    </li>
+                    <!--Dropdown Trigger-->
+                    <li>
+                        <a href="#" class="dropdown-trigger" data-target="dropdown1"><i class="fa-regular fa-user"></i><i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Dropdown Structure-->
+            <ul id="dropdown1" class="dropdown-content header">
+                <li>
+                    <a href="loginform.html">Sign in</a>
+                </li>
+                <li>
+                    <a href="loginform.html">My Account</a>
+                </li>
+                <li>
+                    <a href="#">My Orders</a>
+                </li>
+                <li>
+                    <a href="#">Delivery</a>
+                </li>
+            </ul>
+        </div>
+        <!--Mega Menu-->
+            <div class="nav-content hide-on-med-and-down">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab dropdown-trigger" data-target="dropdown2">
+                        <a class="megamenu" href="#">Best Sellers</a>
+                    </li>
+                    <li class="tab dropdown-trigger" data-target="dropdown3">
+                        <a class="megamenu" href="#">By Occasions</a>
+                    </li>
+                    <li class="tab dropdown-trigger" data-target="dropdown4">
+                        <a class="megamenu" href="#">By Products</a>
+                    </li>
+                    <li class="tab dropdown-trigger" data-target="dropdown5">
+                        <a class="megamenu" href="#">By Sentiments</a>
+                    </li>
+                    <li class="tab dropdown-trigger" data-target="dropdown6">
+                        <a class="megamenu" href="#">Upcoming Events</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+</div>
+        
+        
+        <!--Megamenu structure-->
+        <ul  id="dropdown2" class="dropdown-content">
+            <li><a href="allbouquets.html">Fresh Flowers</a></li>
+            <li><a href="#!">Dried Flowers</a></li>
+            <li><a href="#!">Money Bouquets</a></li>
+            <li><a href="package.html">Package Gifts</a></li>
+            <li><a href="package.html">Car trunk surprise</a></li>
+        </ul>
+        <ul  id="dropdown3" class="dropdown-content">
+            <li><a href="#!">Birthdays</a></li>
+            <li><a href="#!">Anniversaries</a></li>
+            <li><a href="weddings.html">Weddings</a></li>
+            <li><a href="inaugurals.html">Inaugurals</a></li>
+            <li><a href="sympathy.html">Funeral/Sympathy</a></li>
+        </ul>
+        <ul  id="dropdown4" class="dropdown-content">
+            <li><a href="allbouquets.html">All Bouquets</a></li>
+            <li><a href="sympathy.html">All Arrangements</a></li>
+            <li><a href="package.html">Add-on Gifts</a></li>
+            <li><a href="#!">Bubble Balloons</a></li>
+            <li><a href="#!">Sweets</a></li>
+        </ul>
+        <ul  id="dropdown5" class="dropdown-content">
+            <li><a href="allbouquets.html">Just Because</a></li>
+            <li><a href="#!">I'm Sorry</a></li>
+            <li><a href="#!">Get Well Soon</a></li>
+            <li><a href="inaugurals.html">Congratulations</a></li>
+            <li><a href="#!">Appreciation</a></li>
+        </ul>
+        <ul  id="dropdown6" class="dropdown-content">
+            <li><a href="sympathy.html">All Soul's Day</a></li>
+            <li><a href="#!">Christmas Day</a></li>
+            <li><a href="#!">New Year's Day</a></li>
+            <li><a href="allbouquets.html">Valentines Day</a></li>
+            <li><a href="allbouquets.html">Mother's Day</a></li>
+        </ul>
+
+
+
+    <!-- Sidenav Structure-->
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <a href="index.html" class="logo-container center"><img src="images/sidenavlogo.png" alt=""></a>
+        </li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold waves-effect active"><a class="collapsible-header">Sign In<i class="material-icons chevron">chevron_left</i></a>            
+                    <div class="collapsible-body">
+                    <ul>
+                    <li><a href="loginform.html" class="waves-effect active">My Account</a></li>
+                    <li><a href="#" class="waves-effect">My Orders</a></li>
+                    <li><a href="#" class="waves-effect">Delivery</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">BEST SELLERS<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                        <li><a href="allbouquets.html" class="waves-effect">Fresh Flowers</a></li>
+                        <li><a href="#" class="waves-effect">Dried Flowers</a></li>
+                        <li><a href="#" class="waves-effect">Money Bouquet</a></li>
+                        <li><a href="package.html" class="waves-effect">Package Gifts</a></li>
+                        <li><a href="package.html" class="waves-effect">Cartrunk Surprise</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">BY OCCASIONS<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="allbouquets.html" class="waves-effect">Birthdays</a></li>
+                            <li><a href="allbouquets.html" class="waves-effect">Anniversaries</a></li>
+                            <li><a href="weddings.html" class="waves-effect">Weddings</a></li>
+                            <li><a href="inaugurals.html" class="waves-effect">Inaugurals</a></li>
+                            <li><a href="sympathy.html" class="waves-effect">Funeral/Sympathy</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">BY PRODUCTS<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="allbouquets.html" class="waves-effect">All Bouquets</a></li>
+                            <li><a href="#" class="waves-effect">All Arrangements</a></li>
+                            <li><a href="#" class="waves-effect">Add-on Gifts</a></li>
+                            <li><a href="#" class="waves-effect">Bubble Balloons</a></li>
+                            <li><a href="#" class="waves-effect">Sweets</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">BY SENTIMENTS<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#" class="waves-effect">Just Because</a></li>
+                            <li><a href="#" class="waves-effect">I'm Sorry</a></li>
+                            <li><a href="#" class="waves-effect">Get Well Soon</a></li>
+                            <li><a href="inaugurals.html" class="waves-effect">Congratulations</a></li>
+                            <li><a href="#" class="waves-effect">Appreciation</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">UPCOMING EVENTS<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#">All Souls Day</a></li>
+                            <li><a href="#" class="waves-effect">Christmas Day</a></li>
+                            <li><a href="#" class="waves-effect">New Year's Day</a></li>
+                            <li><a href="allbouquets.html" class="waves-effect">Valentines Day</a></li>
+                            <li><a href="allbouquets.html" class="waves-effect">Mothers Day</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    
+        <!--Floating Action Button-->
+        <div class="fixed-action-btn click-to-toggle">
+            <a class="btn-floating btn-large purple darken-2">
+                <i class="fa-solid fa-headset"></i>
+            </a>
+
+            <ul>
+                <li>
+                    <a href="tel:+639991687577" class="btn-floating btn green" target="_blank">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="sms:+639991687577" class="btn-floating btn yellow darken-1" target="_blank">
+                        <i class="fa-solid fa-comment-dots"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=masarejfs@gmail.com&su=FLOWER%20INQUIRY&tf=cm" class="btn-floating btn red" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://m.me/masarej" class="btn-floating btn blue"target="_blank">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Gallery-->
+    <br><br>
+    <div class="row gallery">
+        <div class="container gallery">
+            <div class="box"><img src="gallery2/48.png" alt="" class="responsive-img hoverable"></div>            
+            <div class="box"><img src="gallery1/18.png" alt="" class="responsive-img hoverable"></div>
+            <div class="box"><img src="gallery2/50.png" alt="" class="responsive-img hoverable"></div>
+            <div class="box"><img src="gallery1/21.png" alt="" class="responsive-img hoverable"></div>
+            <div class="box"><img src="gallery1/19.png" alt="" class="responsive-img hoverable"></div>
+            <div class="box"><img src="gallery2/52.png" alt="" class="responsive-img hoverable"></div>
+            <div class="box"><img src="gallery1/20.png" alt="" class="responsive-img hoverable"></div>
+            <div class="box"><img src="gallery2/49.png" alt="" class="responsive-img hoverable"></div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <footer class="page-footer  pink darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s6 m3">
+                    <h6 class="white-text">Say It With Flowers.</h6>
+                    <p class="grey-text text-lighten-4">
+                    Its enchanting floral arrangements possess the power to articulate profound sentiments and emotions, creating an enchanting and heartfelt language of their own.</p>
+                </div>
+                <div class="col s6 m3">
+                    <h6 class="white-text">Love to help</h6>
+                    <ul>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="About Us.html">About Us</a></li>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.google.com/maps/place/Masarej+Flower+Shop/@14.560851,120.5933392,17z/data=!3m1!4b1!4m6!3m5!1s0x33963c4126ceaded:0xba0d6d79704a08bf!8m2!3d14.560851!4d120.5933392!16s%2Fg%2F11cs3gq1ff?entry=ttu">Location</a></li>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="#!">How to Order</a></li>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="#!">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="col s6 m3">
+                    <h6 class="white-text">Stay Connected</h6>
+                    <ul>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.facebook.com/masarej"><i class="fa-brands fa-facebook"></i>  Facebook</a></li>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-instagram"></i>   Instagram</a></li>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="https://www.youtube.com/@masarejflowershop4464"><i class="fa-brands fa-youtube"></i>  Youtube</a></li>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-twitter"></i>  Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col s6 m3">
+                    <h6 class="white-text">Contact Us</h6>
+                    <ul>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="tel:+639198466823"><i class="fa-solid fa-phone"></i> +639198466823</a></li>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="tel:+639171288969"><i class="fa-solid fa-phone"></i>  +639171288969</a></li>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="https://mail.google.com/mail/u/0/?fs=1&to=masarejfs@gmail.com&su=FLOWER%20INQUIRY&tf=cm"><i class="fa-regular fa-envelope"></i> masarejfs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row valign-wrapper">
+                    <div class="col s12 m6">
+                            MasarejFowerShop © 2023.All Rights Reserved
+                    </div>
+                    <div class="col s12 m6">
+                        <ul class="list-inline payment-icons valign-wrapper right">
+                            <li class="list-inline-item">
+                                <img src="payment-icons/1.png" alt="" height="40">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="payment-icons/2.png" alt="" height="40">
+                            </li>
+                            <br>
+                            <li class="list-inline-item">
+                                <img src="payment-icons/3.png" alt="" height="40">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="payment-icons/4.png" alt="" height="40">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="payment-icons/5.png" alt="" height="40">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+        <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/fed3ef3893.js" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                // Tabs init
+                    $('.tabs').tabs();
+                // Sidenav init
+                $('.sidenav').sidenav({
+                    edge: 'right',
+                    inDuration: 800,
+                    outDuration: 500
+                });
+                // Dropdown init
+                $(".dropdown-trigger").dropdown({
+                    hover: false,
+                    coverTrigger: false,
+                    
+                });
+                //Carousel
+                $('.carousel').carousel({
+                    fullWidth: true,
+                    indicators: true,
+                    noWrap: true,
+                }).css('height', $(window).height);
+                });
+                // Collapsible init
+                $('.collapsible').collapsible();
+                // Slider init
+                $('.slider').slider({
+                    height: 300,
+                    interval: 5000,
+                    indicators: true,            
+                });
+                // Floating Action Btn init
+                $('.fixed-action-btn').floatingActionButton({
+                });
+                //MaterialBOx
+                $('.materialboxed').materialbox();
+                //Tooltip
+                $('.tooltipped').tooltip();
+                
+            
+        </script>
+
+</body>
+</html>
